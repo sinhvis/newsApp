@@ -20,6 +20,9 @@ app.controller('MainCtrl', ['$scope', function($scope) {
 	] ;
 
 	$scope.addPost = function() {
+		// prevent user from submitting post with blank title
+		if (!$scope.title || $scope.title === '') { return ; }
+
 		$scope.posts.push({ title: $scope.title, upvotes: 0 }) ;
 
 		// need to clear the post after the post has been created.
