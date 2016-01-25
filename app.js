@@ -28,4 +28,8 @@ app.controller('MainCtrl', ['$scope', function($scope) {
 		// need to clear the post after the post has been created.
 		$scope.title = '' ;
 	} ;
+
+	$scope.incrementUpvotes = function(post) {
+		post.upvotes += 1 ;
+	} ;
 }]) ;
