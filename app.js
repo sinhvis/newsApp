@@ -8,7 +8,7 @@ app.factory('posts', [function() {
 }])
 
 app.controller('MainCtrl', ['$scope', 'posts', function($scope, posts) {
-	
+
 	$scope.posts = posts.posts ;
 
 	$scope.posts = [
@@ -16,7 +16,11 @@ app.controller('MainCtrl', ['$scope', 'posts', function($scope, posts) {
 	{title: 'post 2', upvotes: 2},
 	{title: 'post 3', upvotes: 15},
 	{title: 'post 4', upvotes: 9},
-	{title: 'post 5', upvotes: 4}
+	{title: 'post 5', upvotes: 4},
+	{title: 'post 6 with link',
+	link: 'http://www.yahoo.com', upvotes: 3},
+	{title: 'post 7 with link',
+	link: 'http://www.google.com', upvotes: 4}
 	] ;
 
 	
