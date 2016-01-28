@@ -1,9 +1,9 @@
 ## To Install
-npm install
+> npm install
 
-bower install
+> bower install
 
-# Run
+## Run
 > node app.js
 
 Make sure mongoDB is running
